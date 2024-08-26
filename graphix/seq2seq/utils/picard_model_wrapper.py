@@ -92,7 +92,7 @@ class PicardLauncher(subprocess.Popen):
             ) as picard_build_pid:
                 picard_build_pid.wait(timeout=1000)
             super().__init__(["picard"])
-        time.sleep(1)
+        time.sleep(20)
 
     def __exit__(self, exc_type, value, traceback):
         self.kill()

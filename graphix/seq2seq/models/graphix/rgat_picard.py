@@ -23,7 +23,7 @@ class Model(nn.Module):
         # Load tokenizer and model.
         self.tokenizer = tokenizer
         self.pretrain_model = model_cls_wrapper(AutoModelForSeq2SeqLM).from_pretrained(
-            "t5-3b",
+            "t5-large",
             from_tf=bool(".ckpt" in model_args.model_name_or_path),
             config=config,
             cache_dir=model_args.cache_dir,

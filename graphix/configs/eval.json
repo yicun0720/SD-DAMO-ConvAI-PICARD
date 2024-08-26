@@ -1,6 +1,6 @@
 {
     "run_name": "graphix-spider-eval",
-    "model_name_or_path": "/train_db_id/Graphix-3B",
+    "model_name_or_path": "/train_db_id/checkpoint-30000",
     "dataset": "spider",
     "source_prefix": "",
     "schema_serialization_type": "peteshaw",

@@ -46,9 +46,11 @@ class Preprocessor():
 
     def pipeline(self, entry: dict, db: dict, verbose: bool = False):
         """ db should be preprocessed """
+        #print("Entry: ")
+        #print(entry)
         entry = self.preprocess_question(entry, db, verbose=verbose)
         entry = self.schema_linking(entry, db, verbose=verbose)
-        entry = self.extract_subgraph(entry, db, verbose=verbose)
+        #entry = self.extract_subgraph(entry, db, verbose=verbose)
         return entry
 
     def preprocess_database(self, db: dict, verbose: bool = False):
